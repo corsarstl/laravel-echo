@@ -3,10 +3,13 @@
 use App\Events\OrderStatusUpdated;
 
 Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/update', function () {
     $user = factory(App\User::class)->create();
 
-    OrderStatusUpdated::dispatch($user);
-/*    the same as
+    /*    the same as
     event(new OrderStatusUpdated());*/
-    return view('welcome');
+    OrderStatusUpdated::dispatch($user);
 });

@@ -1,6 +1,10 @@
+/.idea
+.DS_Store
+/.vagrant
 vendor/
 node_modules/
 npm-debug.log
+yarn-error.log
 
 # Laravel 4 specific
 bootstrap/compiled.php
@@ -13,6 +17,7 @@ storage/*.key
 .env.*.php
 .env.php
 .env
+.php_cs
 Homestead.yaml
 Homestead.json
 
